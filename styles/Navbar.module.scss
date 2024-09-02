@@ -1,0 +1,40 @@
+$primary-color: #4caf50;
+$secondary-color: #000000;
+$hover-color: darken($primary-color, 10%);
+
+.navbar {
+  z-index: 3;
+  width: 100vw;
+  padding: 10px 0px;
+  position: fixed;
+  top: 0;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  .navItem {
+    width: 15rem;
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:last-child {
+      text-align: end;
+      padding-right: 3px;
+    }
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

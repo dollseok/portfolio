@@ -1,0 +1,250 @@
+/* styles/Home.module.scss */
+
+.snap_div {
+  scroll-behavior: smooth;
+}
+
+.page_section {
+  position: relative;
+  border-bottom: 1px solid red;
+  height: 100vh;
+  width: 100vw;
+
+  &:nth-child(2) {
+    height: 700vh;
+  }
+
+  &:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:nth-child(4) {
+    height: 300vh;
+  }
+
+  &:nth-child(5) {
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+.imageHomeCover {
+  height: 100%;
+  z-index: -1;
+  object-fit: contain;
+}
+
+.greetingText {
+  z-index: -2;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.workText {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+
+  & > span {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.gradationBox {
+  z-index: -1;
+  background: linear-gradient(#ffffff00, #ffffffe5, #ffffff, #ffffff);
+  width: 100%;
+  height: 170vh;
+  bottom: -170vh;
+  position: absolute;
+}
+
+// 라이프 섹션
+
+.modelImageBox {
+  // object-fit: contain;
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+
+.modelImageContainer {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduce_content {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.introduce_text {
+  text-align: center;
+  border-right: 3px solid black;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 0;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.developer_text {
+  margin-left: 10px;
+  font-size: 2.2rem;
+  transition: all 0.1s ease-in;
+}
+
+.developSection {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developContentBox {
+  text-align: center;
+  margin: 40px;
+  width: 20em;
+  height: 20em;
+}
+
+.developContent {
+  margin-bottom: 30px;
+}
+
+.mainContent {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+// 포트폴리오 페이지 이동 섹션
+
+.portfolioContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioBaseBox {
+  background-color: #e8e8e8;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 70vh;
+}
+
+.portfolioCenterBox {
+  @extend .portfolioBaseBox;
+  z-index: 2;
+}
+
+.portfolioSideBox {
+  z-index: -1;
+  @extend .portfolioBaseBox;
+  transition: all 0.5s ease-in-out;
+}
+
+// .portfolioBoxImage {
+//   opacity: 0.5;
+// }
+
+.portfolioMoveButton {
+  text-align: center;
+  z-index: 3;
+  cursor: pointer;
+  width: 20rem;
+  border-radius: 10rem;
+}
+
+.portfolioMoveButton:hover {
+  color: white;
+  background-color: #0040ff;
+}
+
+.contact_title {
+  margin-top: 30vh;
+  font-size: 5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact_content {
+  font-size: 1.2rem;
+}
+
+.gradientBackground {
+  position: absolute;
+  height: 300vh;
+  width: 100vw;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, background-image 2s ease-in-out,
+    background-color 1s ease-in-out;
+}
+
+// .portfolioContainer .portfolioBox:nth-child(1):hover {
+//   background-image: url("../public/image/model2.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   color: white;
+// }
+
+// .portfolioContainer .portfolioBox:nth-child(2):hover {
+//   background-color: #e8e8e8;
+//   background-image: url("../public/image/main.png");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   color: white;
+// }
