@@ -55,7 +55,7 @@ export default function Home() {
             data={{
               id: item.id,
               title: item.title,
-              period: item.preiod,
+              period: item.period,
               role: "Frontend Developer / UXUI",
               image: item.logo,
             }}
