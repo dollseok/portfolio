@@ -2,6 +2,28 @@ $primary-color: #0040ff;
 $secondary-color: #000000;
 $hover-color: darken($primary-color, 10%);
 
+.mobileNavList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  .navItem {
+    width: 15rem;
+    text-align: center;
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
 .navbar {
   z-index: 3;
   width: 100vw;

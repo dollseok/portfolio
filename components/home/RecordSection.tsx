@@ -1,5 +1,3 @@
-"use client";
-
 import { pretendardFont } from "@/font/font";
 import styles from "../../styles/Home.module.scss";
 

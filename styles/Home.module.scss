@@ -1,5 +1,14 @@
 /* styles/Home.module.scss */
 
+.mobile_ready {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .snap_div {
   scroll-behavior: smooth;
 }
