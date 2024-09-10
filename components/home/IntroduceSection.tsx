@@ -67,7 +67,7 @@ export default function IntroduceSection() {
             }}
           >
             <Image
-              src={"/image/model1.jpg"}
+              src={"/image/main/model1.jpg"}
               fill
               sizes="50vw"
               style={{
@@ -86,7 +86,7 @@ export default function IntroduceSection() {
             }}
           >
             <Image
-              src={"/image/model1.jpg"}
+              src={"/image/main/model1.jpg"}
               fill
               sizes="50vw"
               style={{

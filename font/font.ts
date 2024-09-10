@@ -3,7 +3,7 @@ import { Saira_Semi_Condensed } from "next/font/google";
 
 export const sairaSemiCondensedFont = Saira_Semi_Condensed({
   subsets: ["latin"],
-  weight: ["300"],
+  weight: ["400"],
 });
 
 export const lanaPixelFont = localFont({
@@ -12,4 +12,8 @@ export const lanaPixelFont = localFont({
 
 export const pretendardFont = localFont({
   src: "./Pretendard-Light.ttf",
+});
+
+export const pretendardBoldFont = localFont({
+  src: "./Pretendard-SemiBold.ttf",
 });

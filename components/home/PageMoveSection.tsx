@@ -7,9 +7,9 @@ import { PageMoveSectionAnimation } from "@/animation/PageMoveSection";
 import { useEffect, useRef, useState } from "react";
 
 export default function PageMoveSection() {
-  const modelImage = "/image/model2.jpg";
-  const characterImage = "/image/character.png";
-  const developImage = "/image/main.png";
+  const modelImage = "/image/main/model2.jpg";
+  const characterImage = "/image/main/character.png";
+  const developImage = "/image/main/main.png";
 
   const [buttonHover, setButtonHover] = useState<boolean[]>([false, false]);
 

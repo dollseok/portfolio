@@ -1,7 +1,136 @@
 .portfolioWrapper {
+  margin-top: 3rem;
+  width: 100vw;
+  height: 100%;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolioDetailSection {
+  margin-top: 6rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerSection {
+  width: 60vw;
+}
+
+.textline {
+  display: flex;
+}
+
+.texthead {
+  font-weight: bold;
+  width: 8rem;
+}
+
+// 이미지 섹션
+.mobileImageSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+  // margin: 20px;
+}
+.webImageSection {
+  width: 90vw;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+}
+
+.mobileImageItem {
+  width: 15vw;
+  height: auto;
+  min-width: 320px;
+  margin: 25px;
+}
+.webImageItem {
+  width: 100vw;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #0040ff63;
+}
+
+// skills 섹션
+.skillSection {
+  width: 60vw;
+  margin-top: 1rem;
+}
+
+// works 섹션
+
+.worksSection {
+  width: 60vw;
+  margin-top: 1rem;
+}
+.worksBox {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.worksTitle {
+  display: inline;
+  font-weight: bold;
+  width: 10rem;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 102, 255, 0.5);
+}
+
+.worksContent {
+  font-size: 0.9rem;
+}
+
+// 넥스트 페이지 섹션
+
+.nextPageSection {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
+}
+
+.nextPageContent {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nextPageImageBox {
+  position: relative;
+  z-index: -1;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  height: 50vh;
+}
+
+.nextPageImage {
+  width: 50vh;
+  height: 50vh;
 }

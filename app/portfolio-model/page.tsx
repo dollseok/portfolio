@@ -1,5 +1,11 @@
 import Image from "next/image";
+import styles from "../../styles/model.module.scss";
 
 export default function Home() {
-  return <div>모델 포트폴리오</div>;
+  return (
+    <div className={styles.portfolioWrapper}>
+      <div>MODEL PORTFOLIO</div>
+      <div>COMMING SOON</div>
+    </div>
+  );
 }

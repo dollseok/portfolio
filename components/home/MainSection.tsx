@@ -7,7 +7,7 @@ import { lanaPixelFont } from "@/font/font";
 import { useEffect } from "react";
 
 export default function MainSection() {
-  const homeImage = "/image/main.png";
+  const homeImage = "/image/main/main.png";
 
   const updateScroll = () => {
     const scrollY = window.scrollY;

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { Saira_Semi_Condensed } from "next/font/google";
 import { sairaSemiCondensedFont } from "@/font/font";
 
 export const metadata: Metadata = {

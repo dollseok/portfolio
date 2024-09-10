@@ -1,9 +1,11 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "title": "꿈틀",
-    "logo": "",
-    "description": "",
+    "logo": "/image/develop/logo1.png",
+    "mainImage": "/image/develop/gguemteul/main.png",
+    "summary": "꿈 해몽과 목표를 향해 달려가는 동기부여 서비스.",
+    "description": "인간의 무의식이 반영된 자면서 꾼 꿈을 해몽 사이트의 데이터를 기반으로 해석하여 꿈에 대한 해몽과 카테고리를 제공합니다. 꿈을 서로 사고 팔 수 있고 자면서 꾼 꿈을 기반으로 나의 목표(낮의 꿈)을 위해 어떤 챌린지를 하면 좋을지 추천해주고 유저들끼리 동기부여를 하도록 도와주는 서비스입니다.",
     "links": [
       {
         "id": 1,
@@ -14,11 +16,16 @@
         "id": 2,
         "name": "memoir",
         "link": "https://www.notion.so/420d65003a794018976047e726cf519b"
+      },
+      {
+        "id": 3,
+        "name": "preview",
+        "link": "https://bevel-television-b41.notion.site/PNG-3988c162c7f04ff4aa3e0dd754fc6d9d?pvs=4"
       }
     ],
-    "preiod": "2023.08.28 ~ 2023.10.06",
+    "period": "2023.08.28 ~ 2023.10.06",
     "member": "Frontend 3명 , Backend 3명",
-    "Contribution": "프론트엔드 중 40%",
+    "contribution": "프론트엔드 중 40%",
     "works": [
       {
         "id": 1,
@@ -47,18 +54,56 @@
             "content": "프론트엔드 팀원들이 axios를 사용하기 편하도록 개발"
           }
         ]
+      },
+      {
+        "id": 3,
+        "content": "이미지 미리보기 / img 태그 클릭을 통한 이미지 input 기능 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "useRef를 통해 input 태그 커스텀"
+          },
+          {
+            "id": 2,
+            "content": "파일의 url을 추출하여 이미지 미리보기 구현"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "content": "Dropdown 컴포넌트 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "유저들의 입력사항을 제한하고 페이지 분위기를 해치지 않기 위해 dropdown 개발"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "content": " 낮과 밤 테마 변경에 따른 배경 설정 ",
+        "detail": [
+          {
+            "id": 1,
+            "content": "router url 링크의 pathname을 통해 현재 페이지의 테마를 확인하는 방식으로 background 이미지를 설정"
+          },
+          {
+            "id": 2,
+            "content": "배경화면 이미지 로딩이 너무 오래 걸리는 문제 ⇒ png 파일을 jpg파일로 변환 시켜 로딩에 걸리는 시간을 352ms 에서 39ms로 단축 시켜서 불편함이 없도록 함"
+          }
+        ]
       }
     ],
     "skills": [
       {
         "id": 1,
         "name": "TypeScript",
-        "reason": " Javascript를 사용할 때 의도치 않은 결과값이 나오는 경우를 이전 프로젝트에서 경험했습니다. 그리하여 TypeScript가 필수임을 알게 되어 사용하게 되었습니다."
+        "reason": "Javascript를 사용할 때 의도치 않은 결과값이 나오는 경우를 이전 프로젝트에서 경험했습니다. 그리하여 TypeScript가 필수임을 알게 되어 사용하게 되었습니다."
       },
       {
         "id": 2,
         "name": "React and Redux",
-        "reason": "현재 현업에서 가장 많이 쓰이고 있는 기술들로 프론트엔드 개발을 팀 프로젝트로 처음 접하는 저희 팀에게 정보 서칭이 수월할 것으로 생각 되어 채택했습니다.  "
+        "reason": "현재 현업에서 가장 많이 쓰이고 있는 기술들로 프론트엔드 개발을 팀 프로젝트로 처음 접하는 저희 팀에게 정보 서칭이 수월할 것으로 생각 되어 채택했습니다."
       },
       {
         "id": 3,
@@ -66,10 +111,342 @@
         "reason": "태그 자체를 커스텀해서 사용하는 방식으로 DOM 코드 가독성을 좋게 만들 수 있기에 사용했습니다."
       }
     ],
+    "demonImagesType": "mobile",
     "demonImages": [
-      { "id": 1, "src": "", "alt": "" },
-      { "id": 2, "src": "", "alt": "" },
-      { "id": 3, "src": "", "alt": "" }
+      {
+        "id": 1,
+        "src": "/image/develop/gguemteul/day1.png",
+        "alt": "day1",
+        "width": 500,
+        "height": 1000
+      },
+      {
+        "id": 2,
+        "src": "/image/develop/gguemteul/day2.png",
+        "alt": "day2",
+        "width": 500,
+        "height": 1000
+      },
+      {
+        "id": 3,
+        "src": "/image/develop/gguemteul/day3.png",
+        "alt": "day3",
+        "width": 500,
+        "height": 1000
+      },
+      {
+        "id": 4,
+        "src": "/image/develop/gguemteul/night1.png",
+        "alt": "night1",
+        "width": 500,
+        "height": 1000
+      },
+      {
+        "id": 5,
+        "src": "/image/develop/gguemteul/night2.png",
+        "alt": "night2",
+        "width": 500,
+        "height": 1000
+      },
+      {
+        "id": 6,
+        "src": "/image/develop/gguemteul/night3.png",
+        "alt": "night3",
+        "width": 500,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "TING",
+    "logo": "/image/develop/logo2.png",
+    "summary": "어색하지 않은 스피드 화상 소개팅 서비스",
+    "description": "5분 안에 빠르게 끝나고, 10개의 질문 카드의 주제를 통해 대화를 주고 받고 점수를 매기며 진행하는 게임 같은 화상 소개팅입니다.",
+    "links": [
+      {
+        "id": 1,
+        "name": "github",
+        "link": "https://github.com/dollseok/project-TING"
+      },
+      {
+        "id": 2,
+        "name": "memoir",
+        "link": "https://bevel-television-b41.notion.site/5453487fbe9e4c90a93768af0346c4da?pvs=4"
+      }
+    ],
+    "period": "2023.07.10 ~ 2023.08.18, 6주",
+    "member": "Frontend 3명 , Backend 3명",
+    "contribution": "프론트엔드 중 40%",
+    "works": [
+      {
+        "id": 1,
+        "content": "영상 소개팅 페이지 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "OpenVidu 라이브러리를 사용하여 실시간 영상 소통 개발"
+          },
+          {
+            "id": 2,
+            "content": "점수를 선택했을 때 상대방에게 기계음 전달"
+          },
+          {
+            "id": 3,
+            "content": "setTimeout을 통한 타이머 구현"
+          },
+          {
+            "id": 4,
+            "content": "Session의 on 과 signal 함수를 활용하여 영상 소통하면서도 추가적인 데이터 상대방에게 전달"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "content": "Redux를 통한 상태와 데이터 관리",
+        "detail": [
+          {
+            "id": 1,
+            "content": "Redux에서 소개팅에서 전달되는 데이터 관리"
+          },
+          {
+            "id": 2,
+            "content": "유저가 현재 가지고 있는 아이템의 개수, 상태 관리"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "content": "애니메이션 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "최종 선택 카드 플립 transform과 rotate를 이용하여 개발"
+          },
+          {
+            "id": 2,
+            "content": "keyframes를 활용한 배경의 물고기 애니메이션 개발"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "content": "스크럼 회의를 통해 팀원들의 진행 상황 확인",
+        "detail": [
+          {
+            "id": 1,
+            "content": "매일 오전 스크럼 회의를 통하여 각자의 진행 상황과 당일의 업무를 확인"
+          },
+          {
+            "id": 2,
+            "content": "매주 스프린트 마감을 하며 부족한 점, 잘한 점, 개선할 점을 도출하여 원활한 소통과 프로젝트 진행"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": 1,
+        "name": "React and Redux",
+        "reason": "현재 현업에서 가장 많이 쓰이고 있는 기술들로 프론트엔드 개발을 팀 프로젝트로 처음 접하는 저희 팀에게 정보 서칭이 수월할 것으로 생각 되어 채택했습니다."
+      },
+      {
+        "id": 2,
+        "name": "JavaScript",
+        "reason": "Type에 대한 불편함을 느끼지 못하는데 TypeScript를 사용하는 것 보다 Javascript를 먼저 정확하게 사용해보고자 채택하였습니다."
+      },
+      {
+        "id": 3,
+        "name": "OpenVidu",
+        "reason": "생산성을 위하여 OpenVidu 라이브러리를 활용하여 실시간 영상 소통 개발을 했습니다."
+      }
+    ],
+    "demonImagesType": "web",
+    "demonImages": [
+      {
+        "id": 1,
+        "src": "/image/develop/ting/ting1.png",
+        "alt": "ting1",
+        "width": 2000,
+        "height": 950
+      },
+      {
+        "id": 2,
+        "src": "/image/develop/ting/ting2.png",
+        "alt": "ting2",
+        "width": 2000,
+        "height": 950
+      },
+      {
+        "id": 3,
+        "src": "/image/develop/ting/ting3.png",
+        "alt": "ting3",
+        "width": 2000,
+        "height": 950
+      },
+      {
+        "id": 4,
+        "src": "/image/develop/ting/ting4.png",
+        "alt": "ting4",
+        "width": 2000,
+        "height": 950
+      },
+      {
+        "id": 5,
+        "src": "/image/develop/ting/ting5.png",
+        "alt": "ting5",
+        "width": 2000,
+        "height": 950
+      },
+      {
+        "id": 6,
+        "src": "/image/develop/ting/ting6.png",
+        "alt": "ting6",
+        "width": 2000,
+        "height": 950
+      },
+      {
+        "id": 7,
+        "src": "/image/develop/ting/ting7.png",
+        "alt": "ting7",
+        "width": 2000,
+        "height": 950
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "POPS BUSINESS WEBSITE",
+    "logo": "/image/develop/logo3.png",
+    "summary": "팝업 이벤트 정보 공유 플랫폼 ‘POPS’ 의 비즈니스 웹사이트",
+    "description": "기업들이 가입하여 직접 팝업 스토어 등록과 티켓 등록을 할 수 있도록 하는 웹 사이트입니다. 현재 백엔드 담당하는 인원이 사정 상 업무 불가 상태라 진행은 멈춰있는 상태입니다.",
+    "links": [
+      {
+        "id": 1,
+        "name": "github",
+        "link": "https://github.com/dollseok/popsBiz"
+      }
+    ],
+    "period": "2023.04.07 ~ 미완",
+    "member": "Frontend 1명, Backend 1명",
+    "contribution": "프론트엔드 중 100%",
+    "works": [
+      {
+        "id": 1,
+        "content": "로그인/ 회원가입 페이지 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "회원가입, 로그인 시 입력되는 데이터가 잘못 입력된 부분을 찾으며 좋은 유저 경험을 위해 때문에 유효성 검증에 집중하여 개발"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "content": "커스텀 훅 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "반복되는 로직(이미지 input 로직, modal 창 로직)을 커스텀 훅을 통하여 반복되는 코드를 줄임"
+          },
+          {
+            "id": 2,
+            "content": "useRef를 통해 input의 기능을 사용하고, 이미지 미리보기와 파일 저장 로직을 재사용할 수 있게 개발"
+          },
+          {
+            "id": 3,
+            "content": "useRef를 통해 컴포넌트를 선택하고, modal 창 외부 클릭하면 닫히고, 버튼을 클릭하면 열리는 modal 로직을 재사용할 수 있게 개발"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "content": "팝업 스토어 등록 페이지 개발",
+        "detail": [
+          {
+            "id": 1,
+            "content": "입력 받는 데이터 값에 따라 선택지가 달라질 수 있도록 드롭다운 컴포넌트 개발"
+          },
+          {
+            "id": 2,
+            "content": "엔터를 통해 입력하는 해시태그 input 컴포넌트 개발"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": 1,
+        "name": "React",
+        "reason": "Vue와 React 중에 고민했으나 새로 Vue를 익히기 보다는 제가 익숙한 기술을 쓰는 것이 옳다고 생각했습니다. 또한 후에 개발자가 들어온다하더라도 React 개발자를 채용하기 쉬울 것으로 생각했습니다."
+      },
+      {
+        "id": 2,
+        "name": "Recoil",
+        "reason": "Redux의 middeware로 과다한 코드를 줄이면서 상태 관리를 편하게 사용하고, React Query를 사용하기 위해 채택했습니다."
+      },
+      {
+        "id": 3,
+        "name": "React Query(Tanstack Query)",
+        "reason": "백엔드와 소통하는 api들을 따로 나누어 관리하고 훅의 형태로 사용함으로 코드의 유지 보수와 가독성을 향상 시킬 수 있을 것으로 생각되어 채택했습니다."
+      },
+      {
+        "id": 4,
+        "name": "Styled Component",
+        "reason": "props 형태로 변수에 의해 바뀌는 형태의 css를 사용하기 위해 사용했습니다."
+      }
+    ],
+    "demonImagesType": "web",
+    "demonImages": [
+      {
+        "id": 1,
+        "src": "/image/develop/pops/pops1.png",
+        "alt": "pop1",
+        "width": 1920,
+        "height": 869
+      },
+      {
+        "id": 2,
+        "src": "/image/develop/pops/pops2.png",
+        "alt": "pop2",
+        "width": 1920,
+        "height": 1487
+      },
+      {
+        "id": 3,
+        "src": "/image/develop/pops/pops3.png",
+        "alt": "pop3",
+        "width": 1920,
+        "height": 1131
+      },
+      {
+        "id": 4,
+        "src": "/image/develop/pops/pops4.png",
+        "alt": "pop4",
+        "width": 1920,
+        "height": 1131
+      },
+      {
+        "id": 5,
+        "src": "/image/develop/pops/pops5.png",
+        "alt": "pop5",
+        "width": 1920,
+        "height": 2032
+      },
+      {
+        "id": 6,
+        "src": "/image/develop/pops/pops6.png",
+        "alt": "pop6",
+        "width": 1920,
+        "height": 1694
+      },
+      {
+        "id": 7,
+        "src": "/image/develop/pops/pops7.png",
+        "alt": "pop7",
+        "width": 1920,
+        "height": 1131
+      }
     ]
   }
 ]

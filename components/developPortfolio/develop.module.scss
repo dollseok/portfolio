@@ -1,0 +1,25 @@
+.wrapper {
+  width: 49vw;
+  height: 49vw;
+  margin-bottom: 2vw;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 49vw;
+  height: 49vw;
+  transition: filter 0.5s;
+  &:hover {
+    -webkit-filter: grayscale(70%) blur(2px);
+    filter: grayscale(70%) blur(2px);
+  }
+}
+
+.content {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  color: black;
+  font-size: 1rem;
+}
