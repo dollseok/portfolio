@@ -2,20 +2,26 @@
 
 import Image from "next/image";
 import styles from "../../styles/Home.module.scss";
-import { pretendardFont } from "@/font/font";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { IntroduceSectionAnimation } from "@/animation/IntroduceSection";
 export default function IntroduceSection() {
-  const mainContent1 = useRef(null);
-  const sticky = useRef(null);
+  const mainContent1 = useRef<HTMLElement>(null);
+  const sticky = useRef<HTMLDivElement>(null);
   const modelImage = useRef<HTMLDivElement[]>([]);
-  const firstTextRef = useRef(null);
-  const secondTextRef = useRef(null);
-  const thirdTextRef = useRef(null);
-  const highlightRef = useRef(null);
+  const firstTextRef = useRef<HTMLElement>(null);
+  const secondTextRef = useRef<HTMLElement>(null);
+  const thirdTextRef = useRef<HTMLElement>(null);
+  const highlightRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (mainContent1 && sticky) {
+    if (
+      mainContent1.current &&
+      sticky.current &&
+      firstTextRef.current &&
+      secondTextRef.current &&
+      thirdTextRef.current &&
+      highlightRef.current
+    ) {
       const IntroduceSectionAni = new IntroduceSectionAnimation(
         mainContent1.current,
         sticky.current,

@@ -25,20 +25,23 @@ export default function PageMoveSection() {
   const wrapper = useRef(null);
   const left = useRef(null);
   const right = useRef(null);
-  useEffect(() => {
-    const PageMoveAni = new PageMoveSectionAnimation(
-      wrapper.current,
-      left.current,
-      right.current
-    );
 
-    PageMoveAni.init();
-    window.addEventListener("scroll", () => {
-      PageMoveAni.animate();
-    });
-    window.addEventListener("resize", () => {
+  useEffect(() => {
+    if (wrapper.current && left.current && right.current) {
+      const PageMoveAni = new PageMoveSectionAnimation(
+        wrapper.current,
+        left.current,
+        right.current
+      );
+
       PageMoveAni.init();
-    });
+      window.addEventListener("scroll", () => {
+        PageMoveAni.animate();
+      });
+      window.addEventListener("resize", () => {
+        PageMoveAni.init();
+      });
+    }
   }, []);
 
   return (

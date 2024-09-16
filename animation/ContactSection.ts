@@ -1,7 +1,14 @@
 import styles from "../styles/Home.module.scss";
 
 export class ContactSectionAnimation {
-  constructor(wrapper, background) {
+  wrapper: HTMLElement;
+  background: HTMLElement;
+  length: number;
+  start: number;
+  end: number;
+  step: number;
+
+  constructor(wrapper: HTMLElement, background: HTMLElement) {
     this.wrapper = wrapper;
     this.background = background;
 
@@ -23,21 +30,21 @@ export class ContactSectionAnimation {
 
     if (scrollY <= s - 2 * step) {
       console.log(1);
-      this.background.style.opacity = 0;
+      this.background.style.opacity = "0";
       this.background.style.background = "linear-gradient(0deg, #ffffff)";
     } else if (scrollY > s - step && scrollY <= s) {
       this.background.style.background =
         "linear-gradient(0deg, rgba(188,34,195,1) 0%, rgba(223,148,226,0.7) 25%, rgba(255,255,255,0.7) 35%,rgba(126,248,255,0.7) 45%, rgba(0,241,255,1) 100%)";
-      this.background.style.opacity = 0.5;
+      this.background.style.opacity = "0.5";
       console.log(2);
     } else if (scrollY > s && scrollY <= s + step) {
       this.background.style.background =
         "linear-gradient(90deg, rgba(0,64,255,0.9) 0%, rgba(0,64,255,1) 100%)";
 
-      this.background.style.opacity = 1;
+      this.background.style.opacity = "1";
       console.log(3);
     } else if (scrollY > s + step && scrollY <= e) {
-      this.background.style.opacity = 1;
+      this.background.style.opacity = "1";
     }
   }
 }
