@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { sairaSemiCondensedFont } from "@/font/font";
-// import ScrollProgressBar from "@/components/home/ScrollProgressBar";
+import ScrollProgressBar from "@/components/home/ScrollProgressBar";
 
 export const metadata: Metadata = {
   title: "dollseok's Portfolio | Frontend Developer",
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={sairaSemiCondensedFont.className}>
         <Navbar />
-        {/* <ScrollProgressBar /> */}
+        <ScrollProgressBar />
         {children}
       </body>
     </html>
