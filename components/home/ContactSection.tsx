@@ -9,7 +9,7 @@ export default function ContactSection() {
   const wrapper = useRef(null);
   const contactBackground = useRef(null);
   useEffect(() => {
-    if (contactBackground && wrapper) {
+    if (contactBackground.current && wrapper.current) {
       const ContactSectionAni = new ContactSectionAnimation(
         wrapper.current,
         contactBackground.current

@@ -1,7 +1,19 @@
 import styles from "../styles/Home.module.scss";
 
 export class PageMoveSectionAnimation {
-  constructor(wrapper, leftpart, rightpart) {
+  wrapper: HTMLElement;
+  leftpart: HTMLElement;
+  rightpart: HTMLElement;
+  length: number;
+  start: number;
+  end: number;
+  step: number;
+
+  constructor(
+    wrapper: HTMLElement,
+    leftpart: HTMLElement,
+    rightpart: HTMLElement
+  ) {
     this.wrapper = wrapper;
     this.leftpart = leftpart;
     this.rightpart = rightpart;

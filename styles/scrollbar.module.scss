@@ -1,0 +1,21 @@
+.scrollbarSection {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 190px;
+}
+
+.scrollbarTitle {
+}
+
+.scrollbar {
+  display: flex;
+  align-items: center;
+}
+
+.scrollbarSquare {
+  width: 9px;
+  height: 10px;
+  margin-right: 0.15rem;
+  border: 2px solid black;
+}

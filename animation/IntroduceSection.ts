@@ -1,14 +1,26 @@
 import styles from "../styles/Home.module.scss";
 
 export class IntroduceSectionAnimation {
+  wrapper: HTMLElement;
+  sticky: HTMLElement;
+  background: HTMLElement[];
+  firstText: HTMLElement;
+  secondText: HTMLElement;
+  thirdText: HTMLElement;
+  hightlight: HTMLElement;
+  length: number;
+  start: number;
+  end: number;
+  step: number;
+
   constructor(
-    wrapper,
-    sticky,
-    modelImage,
-    firstText,
-    secondText,
-    thirdText,
-    hightlight
+    wrapper: HTMLElement,
+    sticky: HTMLElement,
+    modelImage: HTMLElement[],
+    firstText: HTMLElement,
+    secondText: HTMLElement,
+    thirdText: HTMLElement,
+    hightlight: HTMLElement
   ) {
     this.wrapper = wrapper;
     this.sticky = sticky;
@@ -35,45 +47,45 @@ export class IntroduceSectionAnimation {
     const step = this.step;
 
     if (window.scrollY <= s) {
-      this.firstText.style.opacity = 0;
-      this.secondText.style.opacity = 0;
+      this.firstText.style.opacity = "0";
+      this.secondText.style.opacity = "0";
       this.background.forEach((background) => {
-        background.style.opacity = 0.5;
+        background.style.opacity = "0.5";
       });
     } else if (scrollY > s && scrollY <= s + step) {
-      this.secondText.style.opacity = 0;
-      this.firstText.style.opacity = 1;
+      this.secondText.style.opacity = "0";
+      this.firstText.style.opacity = "1";
       this.firstText.style.width = `${(400 * (scrollY - s)) / step}px`;
       this.firstText.classList.add(`${styles.typing_animation}`);
       setTimeout(() => {
         this.background.forEach((background) => {
-          background.style.opacity = 0;
+          background.style.opacity = "0";
         });
       }, 1500);
     } else if (scrollY > s + step && scrollY <= s + 2 * step) {
-      this.firstText.style.opacity = 1;
-      this.secondText.style.opacity = 0;
+      this.firstText.style.opacity = "1";
+      this.secondText.style.opacity = "0";
       this.firstText.style.width = `${
         400 - (400 * (scrollY - (s + step))) / step
       }px`;
     } else if (scrollY > s + 2 * step && scrollY <= s + 3 * step) {
-      this.firstText.style.width = 0;
-      this.firstText.style.opacity = 0;
-      this.secondText.style.opacity = 1;
+      this.firstText.style.width = "0";
+      this.firstText.style.opacity = "0";
+      this.secondText.style.opacity = "1";
       this.secondText.style.width = `${
         (200 * (scrollY - (s + 2 * step))) / step
       }px`;
     } else if (scrollY > s + 3 * step && scrollY <= s + 4 * step) {
-      this.firstText.style.opacity = 0;
-      this.secondText.style.opacity = 1;
-      this.thirdText.style.opacity = 0;
+      this.firstText.style.opacity = "0";
+      this.secondText.style.opacity = "1";
+      this.thirdText.style.opacity = "0";
       this.secondText.style.width = `${
         200 - (200 * (scrollY - (s + 3 * step))) / step
       }px`;
     } else if (scrollY > s + 4 * step && scrollY <= s + 5 * step) {
-      this.firstText.style.opacity = 0;
-      this.secondText.style.opacity = 0;
-      this.thirdText.style.opacity = 1;
+      this.firstText.style.opacity = "0";
+      this.secondText.style.opacity = "0";
+      this.thirdText.style.opacity = "1";
       this.thirdText.style.width = `${
         (280 * (scrollY - (s + 4 * step))) / step
       }px`;
@@ -82,7 +94,7 @@ export class IntroduceSectionAnimation {
       this.hightlight.style.color = "#0040ff";
     } else if (scrollY > e) {
       this.background.forEach((background) => {
-        background.style.opacity = 0;
+        background.style.opacity = "0";
       });
     }
   }

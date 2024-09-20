@@ -4,6 +4,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  position: relative;
 }
 
 html::-webkit-scrollbar {
@@ -21,6 +22,6 @@ div {
   padding: 0px;
 }
 
-sectino {
+section {
   margin: 0;
 }
