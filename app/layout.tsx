@@ -5,6 +5,7 @@ import { sairaSemiCondensedFont } from "@/font/font";
 import ScrollProgressBar from "@/components/home/ScrollProgressBar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dollseok-lab.vercel.app/"),
   title: "dollseok's Portfolio | Frontend Developer",
   description: "프론트엔드 개발자 이은석의 포트폴리오. 궁금하시죠?",
   keywords:
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: "dollseok's Portfolio | Frontend Developer",
     description: "이은석의 프론트엔드 개발자 포트폴리오. 궁금하시죠?",
     url: "https://dollseok-lab.vercel.app/",
-    images: "../public/image/main/main-home.png",
+    images: "/image/main/opengraph-image.png",
     siteName: "dollseok lab",
   },
 };
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={sairaSemiCondensedFont.className}>
         <Navbar />
         <ScrollProgressBar />
