@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 export default function PageMoveSection() {
   const modelImage = "/image/main/model2.jpg";
   const characterImage = "/image/main/character.png";
-  const developImage = "/image/main/main.png";
+  const developImage = "/image/main/main2.png";
 
   const [buttonHover, setButtonHover] = useState<boolean[]>([false, false]);
 
